@@ -14,10 +14,10 @@
     <h1>These should switch out between audio and video components:</h1>
 
     <main id="app">
-        <button>Switch!</button>
+        <button @click="switchComponents">Switch!</button>
         <h2>Currently active:</h2>
 
-        <component></component>
+        <component :is="activeComponent"></component>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
